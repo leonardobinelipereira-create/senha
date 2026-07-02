@@ -84,3 +84,7 @@ label{
     width: 25%;
     background-color: #E71B32; 
 }
+.parametro-senha-textos{
+    display: flex;
+    justify-content: space-between;
+}
