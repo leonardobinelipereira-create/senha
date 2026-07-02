@@ -70,3 +70,8 @@ label{
     position: relative;
     bottom: 30px;
 }
+.barra{
+    background-color: var(--fundo-senha);
+    height: 30px;
+    width: 100%;
+}
