@@ -88,3 +88,7 @@ label{
     display: flex;
     justify-content: space-between;
 }
+.media{
+    background-color: #FAF408;
+    width: 50%;
+}
