@@ -52,6 +52,11 @@ function geraSenha(){
      console.log(letrasMaiusculas[numeroAleatorio]);
  }
 }
+// código omitido
+
+let tamanhoSenha = 5;
+
+// código omitido
 
 campoSenha.value = letrasMaiusculas;
 
