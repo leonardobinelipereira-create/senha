@@ -65,6 +65,29 @@ function aumentaTamanho(){
     numeroSenha.textContent = tamanhoSenha;
     geraSenha();
 }
+function geraSenha(){
+    let alfabeto = '';
+    if (checkbox[0].checked){
+        alfabeto = alfabeto + letrasMaiusculas;ABCDEFGHIJKLMNOPQRSTUVXYWZ
+    }
+    if (checkbox[1].checked){
+        alfabeto = alfabeto + letrasMinusculas;abcdefghijklmnopqrstuvxywz
+    }
+    if (checkbox[2].checked){
+        alfabeto = alfabeto + numeros;123456789
+    }
+    if (checkbox[3].checked){
+        alfabeto = alfabeto + simbolos;ABCDEFGHIJKLMNOPQRSTUVXYWZ!@%*?
+    }
+    console.log(alfabeto);
+    let senha = '';
+    for (let i = 0; i < tamanhoSenha;i++){
+        let numeroAleatorio = Math.random()*alfabeto.length;
+        numeroAleatorio = Math.floor(numeroAleatorio);
+        senha = senha + alfabeto[numeroAleatorio];
+    }
+    campoSenha.value = senha;
+}
 
 // código omitido
 // código omitido
